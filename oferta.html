@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Herbaciarnia Online -Oferta</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="script/zegar.js"></script> <!-- ŹRÓDŁO https://codepen.io/dervondenbergen/pen/dVPOwB -->
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+</head>
+<body onload="clock()">
+
+<!-- NAWIGACJA -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img src="img/logo-male.png" alt="Małe logo"></a>
+	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Strona główna</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="oferta.html">Oferta</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="galeria.html">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="kontakt.html">Kontakt</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="autor.html">Autor</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!-- oferta -->
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-12">
+			<h1 class="display-4">Nasza oferta</h1><br>
+			<a class="btn btn-primary btn-lg" href="galeria.html" role="button">Galeria</a>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row oferta text-center" style="float: none; margin: 0 auto;">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="card-img-top" src="img/oferta_1.jpg" alt="oferta1">
+				<div class="card-body">
+					<h4 class="card-title">Herbaty</h4>
+					<p class="card-text">Starannie wyselekcjonowane, wysokogatunkowe herbaty.</p>
+				</div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="card-img-top" src="img/oferta_2.jpg" alt="oferta2">
+				<div class="card-body">
+					<h4 class="card-title">Yerba mate</h4>
+					<p class="card-text">Aromatyczna Yerba mate prosto z Ameryki Południowej.</p>
+				</div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="card-img-top" src="img/oferta_3.jpg" alt="oferta3">
+				<div class="card-body">
+					<h4 class="card-title">Akcesoria</h4>
+					<p class="card-text">Przybory ułatwiające i umilające spożywanie herbaty i Yerba mate.</p>
+				</div>
+    </div>
+  </div>
+</div>
+
+<!-- stopka -->
+<footer>
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-md-6">
+			<img src="img/logo-male-szare.png" alt="Szare logo">
+			<hr class="light">
+			<p>Brukowa 13</p>
+			<p>91-341 Łódź</p>
+			<p>Telefon: 515-825-163</p>
+			<p>Email: <a href="mailto:parujacykubek@gmail.com">parujacykubek@gmail.com</a></p>
+		</div>
+		<div class="col-md-6">
+			<hr class="light">
+			<h5>Godziny otwarcia</h5>
+			<hr class="light">
+			<p>Poniedziałek - piątek</p>
+			<p>8-16</p>
+			<p>Sobota - niedziela</p>
+			<p>NIECZYNNE</p>
+		</div>
+		<div class="col-12">
+			<hr class="light">
+			<h5>&copy; parujący-kubek.pl</h5>
+		</div>
+	</div>
+</div>
+
+<!-- zegar -->
+<div class="container-fluid">
+	<div class="row text-center">
+
+			<div class="clock">
+			  <div class="hours">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="minutes">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="seconds">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second infinite">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			</div>
+		
+	</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Herbaciarnia Online - Kontakt</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="script/zegar.js"></script> <!-- ŹRÓDŁO https://codepen.io/dervondenbergen/pen/dVPOwB -->
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+</head>
+<body onload="clock()">
+
+<!-- NAWIGACJA -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img src="img/logo-male.png" alt="Małe logo"></a>
+	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Strona główna</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="oferta.html">Oferta</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="galeria.html">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="kontakt.html">Kontakt</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="autor.html">Autor</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!-- kontakt -->
+<div class="container justify-content-center align-items-center">
+	<div class="row text-center">
+		<div class="col-md-12">
+			<h1 class="display-4" style="margin-bottom:-12px">Kontakt</h1><br>
+			<p>Brukowa 13</p>
+			<p>91-341 Łódź</p>
+			<p>Telefon: 515-825-163</p>
+			<p>Email: <a href="mailto:parujacykubek@gmail.com">parujacykubek@gmail.com</a></p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.8320057253273!2d19.410147229240913!3d51.80016669873028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQ4JzAwLjYiTiAxOcKwMjQnMzguNSJF!5e0!3m2!1spl!2spl!4v1549511840745" width="300" height="225" style="border:0" allowfullscreen></iframe>
+
+<!-- schemat formularza - bez funkcjonalności wysyłania maili -->
+
+			<h3 style="padding-top:20px">Napisz do nas!</h3>
+			<form>
+				  <div class="form-group" style="width:40%;margin: 0 auto">
+					    <label for="exampleFormControlInput1">Twój adres e-mail:</label>
+					    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="jan.kowalski@gmail.com">
+				  </div>
+				  <div class="form-group" style="width:40%;margin: 0 auto;padding-top:10px">
+					    <label for="exampleFormControlSelect1">Wybierz kategorie pytania:</label>
+					    <select class="form-control" id="exampleFormControlSelect1">
+						      <option>Pytanie dotyczące towaru</option>
+						      <option>Pytanie o dostępność towaru</option>
+						      <option>Inne pytanie</option>
+						      <option>Zamówienia hurtowe</option>
+				    	</select>
+				  </div>
+				  <div class="form-group" style="width:40%;margin: 0 auto;padding-top:10px">
+					    <label for="exampleFormControlTextarea1">Wiadomość:</label>
+					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  </div>
+			</form>
+			<a class="btn btn-primary btn-lg" onclick="wiadomosc()" role="button" style="margin-top:20px;background-color:#b1b9c9;border:0">Wyślij</a>
+		</div>
+		<hr>
+	</div>
+</div>
+
+
+<!-- stopka -->
+<footer>
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-md-6">
+			<img src="img/logo-male-szare.png" alt="Szare logo">
+			<hr class="light">
+			<p>Brukowa 13</p>
+			<p>91-341 Łódź</p>
+			<p>Telefon: 515-825-163</p>
+			<p>Email: <a href="mailto:parujacykubek@gmail.com">parujacykubek@gmail.com</a></p>
+		</div>
+		<div class="col-md-6">
+			<hr class="light">
+			<h5>Godziny otwarcia</h5>
+			<hr class="light">
+			<p>Poniedziałek - piątek</p>
+			<p>8-16</p>
+			<p>Sobota - niedziela</p>
+			<p>NIECZYNNE</p>
+		</div>
+		<div class="col-12">
+			<hr class="light">
+			<h5>&copy; parujący-kubek.pl</h5>
+		</div>
+	</div>
+</div>
+
+<!-- zegar -->
+<div class="container-fluid">
+	<div class="row text-center">
+
+			<div class="clock">
+			  <div class="hours">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="minutes">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="seconds">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second infinite">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			</div>
+		
+	</div>
+</div>
+</footer>
+<script>
+	function wiadomosc(){
+		window.alert("Wysłano!");
+	}
+</script>
+</body>
+</html>

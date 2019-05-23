@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Herbaciarnia Online - Galeria</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="script/zegar.js"></script> <!-- ŹRÓDŁO https://codepen.io/dervondenbergen/pen/dVPOwB -->
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+</head>
+<body onload="clock()">
+
+<!-- NAWIGACJA -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img src="img/logo-male.png" alt="Małe logo"></a>
+	<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Strona główna</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="oferta.html">Oferta</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="galeria.html">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="kontakt.html">Kontakt</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="autor.html">Autor</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!-- galeria -->
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-12">
+			<h1 class="display-4">Galeria</h1>
+			<h5>Produkty dostępne w naszym sklepie</h5>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<div class="container-fluid">
+  	<div class="row oferta text-center">
+
+	  	<div class="col-xs-12 col-sm-6 col-md-4 col-md-12 d-flex justify-content-center mb-3" >
+
+		    <button type="button" class="btn btn-all waves-effect filter" data-rel="all">Wszystko</button>
+		    <button type="button" class="btn btn-her waves-effect filter" data-rel="1">Herbaty</button>
+		    <button type="button" class="btn btn-yer waves-effect filter" data-rel="2">Yerba mate</button>
+		    <button type="button" class="btn btn-akc waves-effect filter" data-rel="3">Akcesoria</button>
+
+	  	</div>
+	</div>
+</div>
+	<div class="col-md-12 d-flex justify-content-center mb-5">
+	<div class="gallery" id="gallery">
+
+		  <div class="mb-3 pics animation all 1">
+		    <img class="img-fluid" src="img/galeria/herbata1.jpg" alt="Huang Ya">
+		    <h5 class="text-center my-3">Herbata żółta Huang Ya </h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 1">
+		    <img class="img-fluid" src="img/galeria/herbata2.jpg" alt="Wietnam FOP">
+		    <h5 class="text-center my-3">Herbata zielona Wietnam FOP</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 1">
+		    <img class="img-fluid" src="img/galeria/herbata3.jpg" alt="azorska Gorreana">
+		    <h5 class="text-center my-3">Herbata zielona Wietnam FOP</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 2">
+		    <img class="img-fluid" src="img/galeria/yerba1.jpg" alt="Elaborada">
+		    <h5 class="text-center my-3">Pajarito Elaborada</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 2">
+		    <img class="img-fluid" src="img/galeria/yerba2.jpg" alt="Suave">
+		    <h5 class="text-center my-3">Union Suave </h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 2">
+		    <img class="img-fluid" src="img/galeria/yerba3.jpg" alt="Con Hierbas">
+		    <h5 class="text-center my-3">Amanda Con Hierbas</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 3">
+		    <img class="img-fluid" src="img/galeria/akcesoria1.jpg" alt="termometr">
+		    <h5 class="text-center my-3">Termometr do herbaty i yerba mate</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 3">
+		    <img class="img-fluid" src="img/galeria/akcesoria2.jpg" alt="zaparzacz">
+		    <h5 class="text-center my-3">Zaparzacz do herbaty</h5>
+		  </div>
+
+		  <div class="mb-3 pics animation all 3">
+		    <img class="img-fluid" src="img/galeria/akcesoria3.jpg" alt="czajnik">
+		    <h5 class="text-center my-3">Czajnik do herbaty i 4 czarki</h5>
+		  </div>
+	</div>
+</div>
+
+
+
+<!-- stopka -->
+<footer>
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-md-6">
+			<img src="img/logo-male-szare.png" alt="Szare logo">
+			<hr class="light">
+			<p>Brukowa 13</p>
+			<p>91-341 Łódź</p>
+			<p>Telefon: 515-825-163</p>
+			<p>Email: <a href="mailto:parujacykubek@gmail.com">parujacykubek@gmail.com</a></p>
+		</div>
+		<div class="col-md-6">
+			<hr class="light">
+			<h5>Godziny otwarcia</h5>
+			<hr class="light">
+			<p>Poniedziałek - piątek</p>
+			<p>8-16</p>
+			<p>Sobota - niedziela</p>
+			<p>NIECZYNNE</p>
+		</div>
+		<div class="col-12">
+			<hr class="light">
+			<h5>&copy; parujący-kubek.pl</h5>
+		</div>
+	</div>
+</div>
+
+<!-- zegar -->
+<div class="container-fluid">
+	<div class="row text-center">
+
+			<div class="clock">
+			  <div class="hours">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="minutes">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			  <div class="tick">:</div>
+			  <div class="seconds">
+			    <div class="first">
+			      <div class="number">0</div>
+			    </div>
+			    <div class="second infinite">
+			      <div class="number">0</div>
+			    </div>
+			  </div>
+			</div>
+		
+	</div>
+</div>
+</footer>
+<script>
+$(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});
+</script>
+</body>
+</html>
